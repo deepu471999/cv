@@ -1,50 +1,36 @@
 \documentclass[a4paper,12pt]{article}
+
 %----------------------------------------------------------------------------------------
-%	PACKAGES
+% PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip} 	
-%other packages for formatting
+\usepackage{parskip}
 \RequirePackage{color}
 \RequirePackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[scale=0.9]{geometry}
-%tabularx environment
 \usepackage{tabularx}
-%for lists within experience section
 \usepackage{enumitem}
-% centered version of 'X' col. type
-\newcolumntype{C}{>{\centering\arraybackslash}X} 
-%to prevent spillover of tabular into next pages
+\newcolumntype{C}{>{\centering\arraybackslash}X}
 \usepackage{supertabular}
-\usepackage{tabularx}
 \newlength{\fullcollw}
 \setlength{\fullcollw}{0.47\textwidth}
-%custom \section
-\usepackage{titlesec}				
+\usepackage{titlesec}
 \usepackage{multicol}
 \usepackage{multirow}
-%CV Sections inspired by: 
-%http://stefano.italians.nl/archives/26
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
-%for publications
-\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
-%Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
+
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-\addbibresource{citations.bib}
-\setlength\bibitemsep{1em}
-%for social icons
-\usepackage{fontawesome5}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,noitemsep]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
 
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
-
 
 \newcommand{\resumeSubheading}[4]{
 \vspace{0.5mm}\item
@@ -63,149 +49,151 @@
     \footnotesize{#4}
 }
 
-\newcommand{\resumeProject}[4]{
-\vspace{0.5mm}\item
-    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1} & \textit{\footnotesize{#3}} \\
-        \footnotesize{\textit{#2}} & \footnotesize{#4}
-    \end{tabular*}
-}
-\newcommand{\emptyLine}{\\[-3mm]}
-
 %----------------------------------------------------------------------------------------
-%	BEGIN DOCUMENT
+% BEGIN DOCUMENT
 %----------------------------------------------------------------------------------------
 \begin{document}
-% non-numbered pages
-\pagestyle{empty} 
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
-%	TITLE
+% TITLE
 %----------------------------------------------------------------------------------------
-
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \Huge{Deepu K B} \\[7.5pt]
-\href{https://github.com/deepu-kb}{GitHub: github.com/deepu-kb} \ $|$ \ 
-\href{https://www.linkedin.com/in/deepu-k-b-05a152184/}{LinkedIn: linkedin.com/in/deepu-k-b-05a152184} \ $|$ \ 
-\href{mailto:k.bdeepu40@gmail.com}{Email: k.bdeepu40@gmail.com} \ $|$ \ 
-\href{tel:+917353788441}{Phone: +91-7353788441} \\
+\href{https://github.com/deepu-kb}{GitHub: deepu-kb} \ $|$ \
+\href{https://www.linkedin.com/in/deepu-k-b-05a152184/}{LinkedIn: in/deepu-kb} \ $|$ \
+\href{mailto:k.bdeepu40@gmail.com}{k.bdeepu40@gmail.com} \ $|$ \
+\href{tel:+917353788441}{+91-7353788441} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
-% EXPERIENCE SECTIONS
+% SUMMARY
 %----------------------------------------------------------------------------------------
-
-%Interests/ Keywords/ Summary
 \section{Summary}
-\textbf{.NET Full Stack Developer} with \textbf{4+ years of experience} designing, developing, and maintaining scalable web applications using C\#, ASP.NET Core, .NET Framework, Entity Framework Core, LINQ, REST APIs, MS SQL Server, JavaScript, ReactJS, Umbraco CMS, Squidex, and Microsoft Azure. Experienced in building CMS-driven websites, modernizing legacy systems, migrating WCF services to .NET Core Web API, developing reports and dashboards, and supporting CI/CD deployments using TeamCity, Octopus Deploy, and IIS. Strong knowledge of SDLC, Object-Oriented Programming (OOP), database design, performance optimization, debugging, and production support with a track record of delivering maintainable enterprise solutions.
+Software Development Engineer with 4+ years of experience in designing, developing, optimizing, and maintaining scalable enterprise web applications using C\#, ASP.NET Core, .NET Framework, REST APIs, MS SQL Server, and Microsoft Azure. Experienced in CMS-based website development with Umbraco CMS and Squidex for BBC Studios, along with strong hands-on experience in backend services, database design, WCF to .NET Core Web API migration, performance optimization, debugging, IIS deployment, and CI/CD release processes using TeamCity and Octopus Deploy. Skilled in translating business requirements into reliable technical solutions, improving application performance, supporting production systems, and delivering maintainable code in Agile development environments.
 
-%Education
+%----------------------------------------------------------------------------------------
+% EDUCATION
+%----------------------------------------------------------------------------------------
 \section{\textbf{Education}}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
     \resumeSubheading
-      {Malnad College Of Engineering,Hassan}{CGPA: 8.72}
-      {Bachelor of Engineering (Information Science and Engineering)}{2017 - 2021}
+      {Malnad College Of Engineering, Hassan}{CGPA: 8.72}
+      {Bachelor of Engineering - Information Science and Engineering}{2017 - 2021}
+
     \resumeSubheading
       {Sri Venkateshwara P U College, Hassan}{Percentage: 85.66}
-      {Pre-University Course (Science) }{2017}
+      {Pre-University Course - Science}{2017}
+
     \resumeSubheading
       {Sri Aravinda High School, Hassan}{Percentage: 88.64}
       {Class 10th}{2015}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
-%-----------Technical skills-----------------
+%----------------------------------------------------------------------------------------
+% TECHNICAL SKILLS
+%----------------------------------------------------------------------------------------
 \section{\textbf{Technical Skills}}
- \begin{itemize}[leftmargin=0.1in, label={}]
+\begin{itemize}[leftmargin=0.1in, label={}]
     \small{\item{
-     \textbf{Languages}{: C\#, SQL, HTML, CSS, JavaScript} \\
-     \textbf{Frameworks/Libraries}{: ASP.NET Core, .NET Framework, .NET Core Web API, Entity Framework Core, LINQ, ReactJS} \\
-     \textbf{CMS \& Web Platforms}{: Umbraco CMS, Squidex, CMS-driven websites} \\
-     \textbf{Developer Tools}{: Visual Studio, VS Code, Git, GitHub} \\
+     \textbf{Languages}{: C\#, SQL} \\
+     \textbf{Frameworks \& Libraries}{: ASP.NET Core, .NET Framework, Entity Framework Core, LINQ, MVC, Umbraco CMS, Squidex} \\
      \textbf{Databases}{: MS SQL Server, Oracle, MongoDB} \\
-     \textbf{APIs \& Protocols}{: REST APIs, Web API} \\
+     \textbf{APIs \& Protocols}{: REST API, SOAP, WCF} \\
      \textbf{Cloud}{: Microsoft Azure} \\
      \textbf{CI/CD \& Deployment}{: TeamCity, Octopus Deploy, IIS} \\
-     \textbf{Other Skills}{: Data Structures \& Algorithms, SDLC, Object-Oriented Programming (OOP), Debugging, Performance Optimization} \\
-     \textbf{Soft Skills}{: Problem Solving, Communication, Teamwork, Adaptability, Time Management} \\
+     \textbf{Developer Tools}{: Visual Studio, VS Code, Git, GitHub} \\
+     \textbf{Core Skills}{: Backend Development, Database Design, Performance Optimization, Debugging, Code Review, SDLC, Object Oriented Programming, Data Structures and Algorithms} \\
+     \textbf{Soft Skills}{: Problem Solving, Communication, Team Collaboration, Adaptability, Time Management, Critical Thinking} \\
     }}
- \end{itemize}
+\end{itemize}
 
-%Experience
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
 \section{Work Experience}
 
 \resumeSubHeadingListStart
-\resumeExperience {HCL Technologies Limited}
- {Lead Engineer} {Feb 2025 - Current}
+\resumeExperience
+ {HCL Technologies Limited}
+ {Lead Engineer}
+ {Feb 2025 - Present}
  {\textbf{Client:} BBC Studios}
- 
- \resumeItemListStart
-  \item Developed and maintained CMS-driven websites and digital platforms for BBC Studios using Umbraco CMS, Squidex, ASP.NET Core, C\#, REST APIs, and Microsoft Azure.
-  \item Built reusable components, templates, and backend integrations to improve content publishing workflows, website performance, and user experience.
-  \item Delivered responsive, maintainable, and production-ready features in collaboration with business stakeholders, designers, QA engineers, and release teams.
-  \item Supported CI/CD pipelines using TeamCity and Octopus Deploy for automated builds, deployments, release validation, and troubleshooting.
-  \item Participated in requirement analysis, technical design discussions, code reviews, defect resolution, and release management for enterprise web applications.
- \resumeItemListEnd
 
- \vspace{4mm}
- \textbf{Key Projects:}
- \resumeItemListStart
-       \item BBC Studios Digital Creative: Website for digital content management and delivery.
-       \item BBC Polska: Website.
-       \item BBC Africa Channels -- Hidden Gems Campaign: Website for BBC Africa campaign content.
- \resumeItemListEnd
+\resumeItemListStart
+  \item Leading the development and maintenance of enterprise-level digital platforms and CMS-driven websites using C\#, ASP.NET Core, Umbraco CMS, Squidex, and Microsoft Azure.
+  \item Implementing backend services, reusable CMS components, and content management workflows to support scalable publishing and delivery requirements.
+  \item Working on REST API integrations, data handling, configuration management, and application enhancements for production systems.
+  \item Collaborating with business stakeholders, QA teams, DevOps teams, and developers to deliver stable and production-ready releases.
+  \item Managing build and deployment activities using TeamCity and Octopus Deploy across multiple environments.
+  \item Participating in requirement analysis, technical discussions, code reviews, debugging, defect fixing, and release support activities.
+\resumeItemListEnd
 
- \resumeSubHeadingListEnd
+\vspace{4mm}
+\textbf{Key Projects:}
+\resumeItemListStart
+  \item BBC Studios Digital Creative: CMS-based platform for managing and delivering digital content.
+  \item BBC Polska: CMS-based platform for managing and delivering digital content.
+  \item BBC Africa Channels - Hidden Gems Campaign: Campaign website for BBC Africa.
+\resumeItemListEnd
 
- \resumeSubHeadingListStart
- \resumeExperience {Surya Financial Technologies Private Limited}
-  {Software Development Engineer - II} {Jun 2022 - Feb 2025}
-  {}
+\resumeSubHeadingListEnd
 
- \resumeItemListStart
-   \item Designed, developed, and maintained enterprise web applications using C\#, ASP.NET Core, .NET Framework, REST APIs, and MS SQL Server.
-   \item Migrated services from WCF to .NET Core Web API, improving system performance by 40\% and enhancing scalability and maintainability.
-   \item Gathered client requirements and translated business needs into technical specifications, development tasks, and implementation plans.
-   \item Developed dynamic web forms, validations, backend services, and database queries to support accurate and user-friendly data processing.
-   \item Built analytics reports and dashboards for data visualization, enabling stakeholders to review financial and risk insights.
-   \item Executed data migration and ETL activities with focus on data integrity, validation, and smooth transition between systems.
-   \item Deployed and supported applications on IIS in production environments, including configuration, issue analysis, and release troubleshooting.
-   \item Reviewed code and guided junior developers on coding standards, debugging practices, and project workflows.
- \resumeItemListEnd
+\resumeSubHeadingListStart
+\resumeExperience
+ {Surya Financial Technologies Private Limited}
+ {Software Development Engineer - II}
+ {Jun 2022 - Feb 2025}
+ {}
 
- \vspace{4mm}
- \textbf{Key Projects:}
- \resumeItemListStart
-       \item PFS (Planning and Forecasting System): Developed a report-based financial forecasting system using .NET Core and MS SQL, enabling streamlined data handling and accurate forecasting results.
-       \item IRRBB (Interest Rate Risk in the Banking Book): Built a report-based dashboard for real-time risk aggregation and analytics, allowing enhanced visibility and assessment of interest rate risks.
-       \item Risk Aggregator: Designed and implemented a solution for consolidating risk data from multiple financial sources, significantly improving data accuracy and enabling comprehensive risk analysis.
- \resumeItemListEnd
+\resumeItemListStart
+  \item Designed, developed, and maintained enterprise web applications to modernize legacy architectures, improving code maintainability, scalability, and performance.
+  \item Led the migration of services from WCF to .NET Core Web API, resulting in a 40\% improvement in system performance and enhanced scalability.
+  \item Developed backend services, business logic, and database-driven modules using C\#, ASP.NET Core, .NET Framework, REST APIs, and MS SQL Server.
+  \item Collaborated with clients and business stakeholders to gather requirements and convert them into clear technical specifications.
+  \item Built analytics and reporting modules to support financial forecasting, risk analysis, and business decision-making.
+  \item Managed data migration and ETL processes, ensuring smooth transitions with high data integrity and accuracy.
+  \item Deployed applications using IIS in production environments, ensuring reliable, secure, and stable hosting.
+  \item Mentored junior developers by providing guidance on coding standards, debugging practices, code quality, and project workflows.
+\resumeItemListEnd
 
- \resumeSubHeadingListEnd
+\vspace{4mm}
+\textbf{Key Projects:}
+\resumeItemListStart
+  \item PFS - Planning and Forecasting System: Developed a report-based financial forecasting system using .NET Core and MS SQL Server, enabling streamlined data handling and accurate forecasting results.
+  \item IRRBB - Interest Rate Risk in the Banking Book: Built a reporting and risk analytics solution for real-time risk aggregation, improving visibility into interest rate risk.
+  \item Risk Aggregator: Designed and implemented a solution for consolidating risk data from multiple financial sources, improving data accuracy and supporting comprehensive risk analysis.
+\resumeItemListEnd
 
- \resumeSubHeadingListStart
- \resumeExperience {Surya Software Systems Private Limited}
-  {Software Development Engineer - I} {Aug 2021 - May 2022}
-  {}
+\resumeSubHeadingListEnd
 
- \resumeItemListStart
-   \item Developed and maintained web application modules using ASP.NET, C\#, .NET Core, SQL, HTML, JavaScript, and REST API concepts.
-   \item Fixed defects, optimized code, and improved application reliability, performance, and maintainability.
-   \item Implemented backend services, frontend components, and dynamic web forms under guidance from senior developers and project leads.
-   \item Participated in requirement analysis and converted business requirements into technical tasks and deliverables.
-   \item Supported deployment activities, configuration changes, release troubleshooting, and post-release issue resolution.
-   \item Collaborated with cross-functional teams to maintain existing applications and deliver enhancements within project timelines.
- \resumeItemListEnd
+\resumeSubHeadingListStart
+\resumeExperience
+ {Surya Software Systems Private Limited}
+ {Software Development Engineer - I}
+ {Aug 2021 - May 2022}
+ {}
 
- \vspace{4mm}
- \textbf{Key Projects:} 
- \resumeItemListStart
-       \item BASEL: Assisted in improving the performance and compliance of the BASEL application by supporting risk assessment features and ensuring regulatory adherence.
-       \item PFS (Planning and Forecasting System): Contributed to the development of this report-based forecasting system, optimizing data input forms and user interactions to streamline data entry processes.
- \resumeItemListEnd
- \resumeSubHeadingListEnd
+\resumeItemListStart
+  \item Assisted in the development and maintenance of web applications using ASP.NET, C\#, .NET Framework, and .NET Core.
+  \item Implemented backend services, business logic, and database-related enhancements under the guidance of senior developers.
+  \item Focused on bug fixing, troubleshooting, and code optimization to improve application reliability and performance.
+  \item Participated in requirement analysis and converted business needs into technical development tasks.
+  \item Supported development of data validation workflows and database-driven modules to improve accuracy and reliability.
+  \item Contributed to deployment processes, configuration updates, and troubleshooting during release cycles.
+  \item Maintained existing applications by identifying improvement areas and applying performance and stability enhancements.
+  \item Collaborated with project teams to resolve technical issues and support successful project delivery.
+\resumeItemListEnd
 
+\vspace{4mm}
+\textbf{Key Projects:}
+\resumeItemListStart
+  \item BASEL: Supported performance improvement and compliance-related enhancements by contributing to risk assessment features and regulatory reporting workflows.
+  \item PFS - Planning and Forecasting System: Contributed to the development of a report-based forecasting system by improving data handling, validation, and backend processing.
+\resumeItemListEnd
 
- \vfill
- % \center{\footnotesize Last updated: \today}
+\resumeSubHeadingListEnd
 
- \end{document}
+\vfill
+
+\end{document}
